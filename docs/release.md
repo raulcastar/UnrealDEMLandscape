@@ -17,8 +17,9 @@ Visual Studio.
    writes `UnrealDEMLandscape-<VersionName>-UE<engine>-Win64.zip` to `%TEMP%\UnrealPluginRelease`
    (`-OutDir` to change). The zip holds a `UnrealDEMLandscape/` folder: the descriptor,
    `Source/`, the compiled `Binaries/`, the libraries packaged games link
-   (`Intermediate/`), and the `LICENSE`, `README.md` and `docs/` listed in
-   `Config/FilterPlugin.ini`.
+   (`Intermediate/`), the regolith material in `Content/`, and the `LICENSE`,
+   `README.md` and `docs/` listed in `Config/FilterPlugin.ini`. Run it from a
+   clone with the LFS files pulled (`git lfs pull`), or `Content/` holds pointers.
 3. Tag the commit (`v<VersionName>`) and create a GitHub release from the tag,
    attaching the zip.
 

@@ -9,7 +9,7 @@
 	"CreatedBy": "Raul Castilla Arquillo",
 	"CreatedByURL": "https://github.com/raulcastar/UnrealDEMLandscape",
 	"DocsURL": "https://github.com/raulcastar/UnrealDEMLandscape#readme",
-	"CanContainContent": false,
+	"CanContainContent": true,
 	"IsBetaVersion": false,
 	"Installed": false,
 	"EnabledByDefault": true,
