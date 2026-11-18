@@ -63,18 +63,15 @@ utility Blueprints.
 
 ## Lunar regolith material
 
-The plugin also carries a Landscape material for lunar regolith, in its
-content as `/UnrealDEMLandscape/Landscape/Landscape_Material`: Poly Haven's
-`moon_01` textures (diffuse, normal, roughness) at 2048 px, tiled at two scales
-and blended by distance, the same material MARE's project uses with 4K
-textures. Terrain Studio copies it into a project that has no
-`/Game/Landscape/Landscape_Material` (the ESA XR Example, a new project) the
-first time it sends a terrain, so packaged builds keep it. To use it by hand,
-assign it in the Landscape's *Landscape Material* slot (turn on *Show Plugin
-Content* in the Content Browser to find it).
+The plugin carries a lunar regolith Landscape material,
+`/UnrealDEMLandscape/Landscape/Landscape_Material`: Poly Haven's `moon_01`
+textures at 2048 px, tiled at 2.5 m and 100 m and blended by distance.
+Terrain Studio copies it into projects that have no
+`/Game/Landscape/Landscape_Material`. To use it by hand, assign it to the
+Landscape's *Landscape Material* (enable *Show Plugin Content* to find it).
 
-The assets are stored with [Git LFS](https://git-lfs.com/): run `git lfs install`
-once before cloning, or the `.uasset` files arrive as small text pointers.
+The assets use [Git LFS](https://git-lfs.com/): run `git lfs install` before
+cloning.
 
 ## Dependencies
 
@@ -92,6 +89,4 @@ None: only engine modules.
 
 The textures in `Content/Landscape/Assets/moon_01_4k` are from
 [Poly Haven's Moon collection](https://polyhaven.com/collections/moon),
-[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) (public domain;
-credited as a courtesy). The folder keeps MARE's `moon_01_4k` name so that
-paths match between the two copies.
+[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/).
